@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局滚动条样式（深色主题） */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+/* 禁止 iframe 拖拽选中 */
+body {
+  user-select: none;
+}
+
+/* 输入框和文本允许选中 */
+input, textarea, [contenteditable] {
+  user-select: text;
+}
